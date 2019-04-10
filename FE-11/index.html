@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Formulário - Projeto 2</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>FE-11</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
@@ -17,7 +17,7 @@
 						<label for="name">Nome</label>
 					</div>
 					<div class="col-b">
-						<input type="text" id="name" name="nome2" placeholder="Digite seu nome ou apelido">
+						<input class="success" type="text" id="name" name="nome2" placeholder="Digite seu nome ou apelido">
 					</div>
 				</div>
 
@@ -26,8 +26,8 @@
 						<label for="email">E-mail</label>
 					</div>
 					<div class="col-b">
-						<input type="text" id="email" name="e-mail" placeholder="Digite seu melhor e-mail" required>
-						<span class="caution">E-mail é um campo obrigatório</span>
+						<input class="error" type="text" id="email" name="e-mail" placeholder="Digite seu melhor e-mail">
+						<div class="caution">E-mail é um campo obrigatório</div>
 					</div>
 				</div>
 
@@ -45,12 +45,12 @@
 						<label for="comentario">Comentário</label>
 					</div>
 					<div class="col-b">
-						<textarea required id="comentario" name="comentario" placeholder="" style="height:80px"></textarea>
-						<span class="caution">Comentario é um campo obrigatório</span>
+						<textarea class="error" id="comentario" name="comentario" placeholder="" style="height:80px"></textarea>
+						<div class="caution">Comentário é um campo obrigatório</div>
 					</div>
 				</div>
 
-				<div class="button">
+				<div class="knob">
 					<button type="submit" class="button button--primary">Enviar Comentário</button>
 					<button type="reset" class="button button--secondary">Limpar Campos</button>
 				</div>
