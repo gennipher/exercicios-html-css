@@ -6,8 +6,6 @@
   margin: 0 auto;
   width: 1000px;
   padding: 15px;
-  border-radius: 5px;
-  border: thin solid #e0e0e0;
   font-family: Helvetica, Arial, sans-serif;
   font-size: medium;
 }
@@ -54,6 +52,18 @@ input, select, textarea {
   padding: 8px;
   border-radius: 5px;
   border: thin solid #e0e0e0;
+}
+
+#name {
+    border-color: #27a746;
+}
+
+#email {
+    border-color: red;
+}
+
+#comentario {
+    border-color: red;
 }
 
 .row::after {
