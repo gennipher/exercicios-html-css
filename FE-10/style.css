@@ -6,8 +6,6 @@
   margin: 0 auto;
   width: 1000px;
   padding: 15px;
-  border-radius: 5px;
-  border: thin solid #e0e0e0;
   font-family: Helvetica, Arial, sans-serif;
   font-size: medium;
 }
@@ -66,21 +64,27 @@ a {
   text-decoration:none; 
 } 
 
-.button {
-  color: white;
-  padding: 12px 12px 12px;
-  border: thick solid white;
-  border-radius: 10px;
-  font-size: 15px;
-  cursor: pointer;
+.knob {
   display: flex;
   flex-direction: row-reverse;
   }
   
 .button--primary {
   background-color: #27a746;
+  color: white;
+  padding: 12px 12px 12px;
+  border: thick solid white;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .button--secondary {
   background-color: #6c757d;
+  color: white;
+  padding: 12px 12px 12px;
+  border: thick solid white;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
 }
