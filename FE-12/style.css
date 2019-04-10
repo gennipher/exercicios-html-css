@@ -52,23 +52,29 @@ input, select, textarea {
     clear: both;
 }
 
-.button {
-    color: white;
-    padding: 12px 12px 12px;
-    border: thick solid white;
-    border-radius: 10px;
-    font-size: 15px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row-reverse;
-}
-    
-.button--primary {
-    background-color: #27a746;
-}
+.knob {
+  display: flex;
+  flex-direction: row-reverse;
+  }
   
+.button--primary {
+  background-color: #27a746;
+  color: white;
+  padding: 12px 12px 12px;
+  border: thick solid white;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 .button--secondary {
-    background-color: #6c757d;
+  background-color: #6c757d;
+  color: white;
+  padding: 12px 12px 12px;
+  border: thick solid white;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .box {
