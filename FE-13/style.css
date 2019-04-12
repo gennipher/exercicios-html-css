@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    width: 100%;
+    padding: 2% 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    border: thin solid lightgray;
+    border-radius: 5px;
+}
+
+.box {
+    width: 100%;
+    display: block;
+}
+
+.logo {
+    display: block;
+    padding: 2% 2% 2% 1%;
+    color: red;
+}
+
+
+label {
+    color: red;
+}
+
+.message {
+    color: black;
+    font-size: medium;
+    padding: 6% 0 0;
+}
+
+.login {
+    display: block;
+    width: 100%;
+    padding: 2%;
+    color: black;
+    border: thin solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 3%;
+
+}
+
+input {
+    border: none;
+    font-size: 100%;
+}
+
+
+
