@@ -64,6 +64,7 @@ input, select, textarea {
   border-radius: 10px;
   font-size: 15px;
   cursor: pointer;
+  outline-style: none;
 }
 
 .button--secondary {
@@ -74,6 +75,7 @@ input, select, textarea {
   border-radius: 10px;
   font-size: 15px;
   cursor: pointer;
+  outline-style: none;
 }
 
 a { 
@@ -84,7 +86,7 @@ a {
   display: flex;
   border: thin solid #e0e0e0;
   border-radius: 5px;
-  padding-top: 8px;
+  padding: 1% 2%;
 }
 
 .img {
@@ -99,14 +101,13 @@ img {
 }
 
 .text {
- margin-top: 25px;
- margin-bottom: 8px;
- width: 884px;
- margin-left: 0;
+  margin: 1%;
+  line-height: 150%;
 }
 
 .title {
   width: 100%;
+  margin-top: 2%;
 }
 
 .comment {
