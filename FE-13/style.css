@@ -3,51 +3,60 @@
   }
 
 .container {
-    width: 100%;
-    padding: 2% 5%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 100%;
-    border: thin solid lightgray;
+    display: flex;    
     border-radius: 5px;
-}
-
-.box {
+    justify-content: center;
+    border: thin solid lightgray;
     width: 100%;
-    display: block;
 }
 
 .logo {
-    display: block;
+    display: flex;
     padding: 2% 2% 2% 1%;
     color: red;
+    font-size: x-large;
 }
 
-
-label {
-    color: red;
+.image1 {
+  margin-right: 8px;
+  weidth: 30px;
+  height: 30px;
 }
 
-.message {
-    color: black;
-    font-size: medium;
-    padding: 6% 0 0;
+.text2 {
+  padding: 10px 10px 10px 0;
+  font-size: large;
 }
 
 .login {
-    display: block;
-    width: 100%;
-    padding: 2%;
-    color: black;
+    display: flex;
+    width: 150%;
     border: thin solid lightgray;
-    border-radius: 4px;
-    margin-bottom: 3%;
+    border-radius: 5px;
+    margin-top: 15px;  
+    font-size: large;
+}
 
+.login i {
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    color: black;
+    background: lightgray;
+    margin-right: 5px;
 }
 
 input {
     border: none;
     font-size: 100%;
+    padding: 5px;
 }
 
-
-
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 20px;k
+}
