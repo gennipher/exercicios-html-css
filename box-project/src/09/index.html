@@ -7,32 +7,110 @@
     <style>
       * {
         box-sizing: border-box;
+        max-width: 100%;
       }
 
-      body {
-        margin: 0;
+      html, body{
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+      header {
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-content: center;
+        background-color: red;
       }
 
-      section {
+      .box0 {
+        width: 5em;
+        height: 1em;
+        margin: 0 auto;
+        margin-left: 8em;
+        background-color: green;
+        align-self: center;
+      }
+
+      .container {
+        max-width: 100%;
+        height: 84%;
+        display:flex;
+      }
+
+      .left-content {
+        max-width: 100%;
+        height: 100%;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .box1 {
+        width: 5em;
+        height: 5em;
+        margin: 1em;
+        background-color: green;
+      }
+
+      .right-content {
+        background-color: blue;
         width: 100%;
         height: 100%;
+        flex: 2;
       }
 
-      img {
-        max-width: 1213px;
+      .text {
+        margin-left: 20px;
+        color: white;
+        font-size: medium;
+      }
+      
+      footer {
+        height: 8%;
+        text-align: center;
+        background: rgba(83, 46, 11, 0.925);    
+      }
+
+      nav {
+        padding: 10px;
+        text-align: center;
+      }
+
+      a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
       }
       
     </style>
   </head>
   <body>
 
+    <header>
+      <div class="box0"></div>
+    </header>
     <div class="container">
-      <section>
-        <div class="img">
-          <img src="09.png" alt="img09">
+      <div class="left-content">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+      </div>
+      <div class="right-content">
+        <div class="text">
+          <h1>Topic</h1>
+          <div class="label">Text text text text</div>
         </div>
-      </section>
+      </div>
     </div>
-  
+    <footer>
+      <nav>
+        <a href="">Some link</a>
+        <a href="">Some link</a>
+        <a href="">Some link</a>
+      </nav>
+    </footer>
+    </div>
   </body>
 </html>
