@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: medium;
+}
+
+form {
+  width: 100%;
+  border-radius: 5px;
+  border: thin solid #e0e0e0;
+  display: flex; 
+}
+
+section {
+  width: 100%;
+  padding: 15px;
+}
+
+.box {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: thin solid #e0e0e0;
+}
+
+.row {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+}
+
+.col-a {
+  flex: 1;
+  padding: 8px;
+}
+
+.col-b {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: thin solid #e0e0e0;
+  font-size: 12px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a { 
+  text-decoration:none; 
+} 
+
+.knob {
+  display: flex;
+  flex-direction: row-reverse;
+  }
+  
+.button--primary {
+  background-color: #27a746;
+  color: white;
+  padding: 5px 5px 5px;
+  border: thick solid white;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button--secondary {
+  background-color: #6c757d;
+  color: white;
+  padding: 5px 5px 5px;
+  border: thick solid white;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
