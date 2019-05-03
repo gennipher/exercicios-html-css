@@ -1,0 +1,19 @@
+{
+  "name": "material-components-web-codelabs",
+  "version": "1.0.0",
+  "description": "This repository contains five codelabs for [Material Components for the Web](https://github.com/material-components/material-components-web).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web-codelabs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web-codelabs/issues"
+  },
+  "homepage": "https://github.com/material-components/material-components-web-codelabs#readme"
+}
