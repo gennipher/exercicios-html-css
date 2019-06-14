@@ -1,0 +1,22 @@
+{
+  "name": "exercicios-html-css",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "index.js",
+  "scripts": {
+    "homesimpson": "parcel homesimpson/index.html",
+    "FE-14": "parcel FE-14/index.html",
+    "photogrid": "parcel photogrid/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/jenniferomena/exercicios-html-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jenniferomena/exercicios-html-css#readme",
+  "dependencies": {
+    "parcel": "^1.12.3"
+  },
+  "devDependencies": {}
+}

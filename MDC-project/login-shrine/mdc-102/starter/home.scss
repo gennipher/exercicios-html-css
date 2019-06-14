@@ -1,28 +1,156 @@
 @import "./common";
-
-.home {
-  display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
-}
-
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 
-.shrine-logo-drawer {
-  display: block;
-  width: 48px;
-  padding: 40px 0 0;
-  margin: 0 auto;
-  fill: currentColor;
+.home {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
 }
 
-.shrine-title {
-  text-align: center;
-  margin: 5px auto;
+$color-button: #faab19;
+$font-title: 1em;
+$font-color: #bfcbd6;
+$header-margin: 15px 15px 0 20px;
+
+@mixin text {
+  font-weight: bold ;
+  color: $font-color;
 }
 
-@import "@material/image-list/mdc-image-list";
+@mixin tranform-icon {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 
-.product-list {
-  @include mdc-image-list-standard-columns(4);
-  overflow: auto;
+@mixin button {
+  background-color: $color-button;
+  border: none;
+  border-radius: 50px;
+  margin: 0 10px;
+  padding: 15px 20px;
+  outline: none;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* ASIDE */
+.mdc-drawer {
+  background-color: #344a55;
+  margin-right: 10px;
+  position: fixed;
+  .mdc-drawer__container {
+    display: flex;
+    margin: $header-margin;
+    flex-direction: row;
+    .mdc-drawer__header {
+      padding: 0 5px;
+    }
+    .shrine-title {
+      font-size: $font-title;
+      letter-spacing: 2.5px;
+      font-size: 14px;
+      @include text();
+    }
+    .mdc-drawer__header i {
+      font-size: 1em;
+      color: $font-color;
+      margin: 20px 10px 0 0;
+      @include tranform-icon();
+    }
+    .mdc-drawer__user {
+    color:$font-color;
+    margin-top: 15px;
+    margin-left: auto;
+    }
+    .mdc-drawer__config {
+      margin: 20px 5px 0 15px;
+      color: $font-color;
+    }
+  }
+
+  .button--message button {
+    @include button();
+    i.fa-pencil-alt {
+      font-size: medium;
+    }
+    .text {
+      margin-left: 10px;
+      font-weight: bolder;
+    }
+  }
+
+  .mdc-list {
+    .mdc-list-item i {
+      font-size: 1em;
+      color: $font-color;
+      margin: 0px 20px 0 10px;
+    }
+    .mdc-list-item__text {
+      color: $font-color;
+      @include text();
+      letter-spacing: 1.5px;
+      font-size: 12px;
+    }
+}
+
+.mdc-list-item:focus .mdc-list-item__text{ 
+  color: $color-button;
+  outline: none;
+}
+
+.mdc-list-item:focus i {
+  color: $color-button;
+  outline: none; 
+}
+
+  @mixin divider-line {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 0 1px;
+    height: 10px;
+    line-height: 20px;
+    text-align:center;
+    margin: 0 15px;
+  }
+
+  .divider {
+    @include divider-line();
+    border-color: $font-color;
+  }
+
+  .color-none {
+    @include divider-line()
+  }
+}
+
+body {
+  background-color:  #edf0f2;
+}
+
+/* CARDS */
+
+.container-main {
+  width: 100%;
+  margin: 20px 15px 0 285px;
+  
+}
+
+.demo-card {
+  width: 100%;
+  margin-bottom: 20px;
+
+  .mdc-typography {
+    margin-left: 16px;
+  }
+
+  .mdc-card__action-icons .mdc-icon-button {
+    font-size: 18px;
+  }
+}
+
+.demo-card__primary {
+  display: flex;
 }

@@ -6,147 +6,111 @@
   <title>Jenny's (MDC Web Example App)</title>
   <link rel="shortcut icon" href="https://material.io/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="bundle-home.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
+<!----BODY----->
 <body class="home">
   <aside class="mdc-drawer shrine-drawer">
-    <div class="mdc-drawer__header">
-      <svg class="shrine-logo-drawer" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" fill="#000000" focusable="false">
-        <g>
-          <g>
-              <path d="M17,2H7L2,6.62L12,22L22,6.62L17,2z M16.5,3.58l3.16,2.92H16.5V3.58z M7.59,3.5H15v3H4.34L7.59,3.5z
-            M11.25,18.1L7.94,13h3.31V18.1z M11.25,11.5H6.96L4.69,8h6.56V11.5z M16.5,12.32 M12.75,18.09V8h6.56L12.75,18.09z"/>
-          </g>
-          <rect fill="none" width="24" height="24"/>
-        </g>
-      </svg>
 
-      <h1 class="shrine-title">WoDevUp</h1>
+<!----HEADER---->
+    <div class="mdc-drawer__container">
+      <div class="mdc-drawer__header">
+        <i class="fas fa-scroll"></i>
+        <span class="shrine-title">REPLY</span>
+      </div>
+      <div class="mdc-drawer__user ">
+        <i class="material-icons">account_circle</i>
+      </div>
+      <div class="mdc-drawer__config">
+        <i class="fas fa-cogs"></i>
+      </div>
     </div>
+
+<!-----DIVIDER----->
+    <div class="divider color-none"></div>
+
+<!----BUTTON---->
+    <div class="button--message">
+      <button type="button" id="button-modal" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#button-modal">
+          <i class="fas fa-pencil-alt"></i>
+          <label class="text">COMPOSE</label>
+      </button>
+    </div>
+
+<!-----DIVIDER----->
+    <div class="divider color-none"></div>
+
+<!-----NAV----->
     <div class="mdc-drawer__content">
       <nav class="mdc-list">
-        <a class="mdc-list-item mdc-list-item--activated" aria-selected="true" tabindex="0" href="#">
-          <span class="mdc-list-item__text">Sobre</span>
+        <a class="mdc-list-item" href="/inbox.html">
+          <i class="fas fa-inbox"></i>
+          <label class="mdc-list-item__text" tabindex="0">Inbox</label>
         </a>
         <a class="mdc-list-item" href="#">
-          <span class="mdc-list-item__text">Eventos</span>
+          <i class="far fa-star"></i>
+          <label class="mdc-list-item__text" tabindex="0">Starred</label>
         </a>
         <a class="mdc-list-item" href="#">
-            <span class="mdc-list-item__text">Vem aí</span>
+          <i class="far fa-paper-plane"></i>  
+          <label class="mdc-list-item__text" tabindex="0">Sent</label>
         </a>
         <a class="mdc-list-item" href="#">
-          <span class="mdc-list-item__text">Código de Conduta</span>
+          <i class="fas fa-trash-alt"></i>
+          <label class="mdc-list-item__text" tabindex="0">Trash</label>
         </a>
         <a class="mdc-list-item" href="#">
-          <span class="mdc-list-item__text">Cadastro</span>
+          <i class="fas fa-hand-paper"></i>
+          <label class="mdc-list-item__text" tabindex="0">Spam</label>
         </a>
+        <a class="mdc-list-item" href="#">
+          <i class="far fa-envelope-open"></i>
+          <label class="mdc-list-item__text" tabindex="0">Drafts</label>
+        </a>
+      </nav>
 
+<!-----DIVIDER----->
+      <div class="divider"></div>
+
+<!-----NAV2----->
+
+      <nav class="mdc-list">
+        <a class="mdc-list-item">
+          <label class="mdc-list-item__text folders">FOLDERS</label>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="far fa-folder"></i>
+          <label class="mdc-list-item__text">Starred</label>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="far fa-folder"></i> 
+          <label class="mdc-list-item__text">Sent</label>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="far fa-folder"></i>
+          <label class="mdc-list-item__text">Trash</label>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="far fa-folder"></i>
+          <label class="mdc-list-item__text">Spam</label>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="far fa-folder"></i>
+          <label class="mdc-list-item__text">Drafts</label>
+        </a>
       </nav>
     </div>
   </aside>
+  
 
-  <ul class="mdc-image-list product-list">
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-    <li class="mdc-image-list__item">
-      <img class="mdc-image-list__image" src="assets/weave-keyring.jpg">
-      <div class="mdc-image-list__supporting">
-        <span class="mdc-image-list__label">Weave keyring</span>
-      </div>
-    </li>
-  </ul>
+
+
 
   <script src="bundle-home.js" async></script>
 </body>

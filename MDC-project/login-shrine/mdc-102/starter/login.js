@@ -1,8 +1,13 @@
 import {MDCRipple} from '@material/ripple';
 import {MDCTextField} from '@material/textfield';
 
-const username = new MDCTextField(document.querySelector('.username'));
-const password = new MDCTextField(document.querySelector('.password'));
+const {querySelector} = document
 
-new MDCRipple(document.querySelector('.cancel'));
-new MDCRipple(document.querySelector('.next'));
+new MDCTextField(querySelector('.username'));
+new MDCTextField(querySelector('.password'));
+
+var cancel = "cancel";
+var next = "next";
+
+new MDCRipple(querySelector('.cancel'));
+new MDCRipple(querySelector('.next'));

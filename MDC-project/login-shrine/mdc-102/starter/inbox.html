@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jenny's (MDC Web Example App)</title>
+  <link rel="shortcut icon" href="https://material.io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="bundle-home.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<!----BODY----->
+<body class="home">
+    <aside class="mdc-drawer shrine-drawer">
+  
+  <!----HEADER---->
+      <div class="mdc-drawer__container">
+        <div class="mdc-drawer__header">
+          <i class="fas fa-scroll"></i>
+          <span class="shrine-title">REPLY</span>
+        </div>
+        <div class="mdc-drawer__user ">
+          <i class="material-icons">account_circle</i>
+        </div>
+        <div class="mdc-drawer__config">
+          <i class="fas fa-cogs"></i>
+        </div>
+      </div>
+  
+  <!-----DIVIDER----->
+      <div class="divider color-none"></div>
+  
+  <!----BUTTON---->
+      <div class="button--message">
+        <button type="button" id="button-modal" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#button-modal">
+            <i class="fas fa-pencil-alt"></i>
+            <label class="text">COMPOSE</label>
+        </button>
+      </div>
+  
+  <!-----DIVIDER----->
+      <div class="divider color-none"></div>
+  
+  <!-----NAV----->
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+          <a class="mdc-list-item" href="/inbox.html">
+            <i class="fas fa-inbox"></i>
+            <label class="mdc-list-item__text" tabindex="0">Inbox</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="far fa-star"></i>
+            <label class="mdc-list-item__text" tabindex="0">Starred</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="far fa-paper-plane"></i>  
+            <label class="mdc-list-item__text" tabindex="0">Sent</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="fas fa-trash-alt"></i>
+            <label class="mdc-list-item__text" tabindex="0">Trash</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="fas fa-hand-paper"></i>
+            <label class="mdc-list-item__text" tabindex="0">Spam</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="far fa-envelope-open"></i>
+            <label class="mdc-list-item__text" tabindex="0">Drafts</label>
+          </a>
+        </nav>
+  
+  <!-----DIVIDER----->
+        <div class="divider"></div>
+  
+  <!-----NAV2----->
+  
+        <nav class="mdc-list">
+          <a class="mdc-list-item">
+            <label class="mdc-list-item__text folders">FOLDERS</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="far fa-folder"></i>
+            <label class="mdc-list-item__text">Starred</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="far fa-folder"></i> 
+            <label class="mdc-list-item__text">Sent</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="far fa-folder"></i>
+            <label class="mdc-list-item__text">Trash</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="far fa-folder"></i>
+            <label class="mdc-list-item__text">Spam</label>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <i class="far fa-folder"></i>
+            <label class="mdc-list-item__text">Drafts</label>
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+<div class="container-main">
+
+    <div class="mdc-card demo-card">
+        <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            <div class="demo-card__primary">
+                <h3 class="demo-card__title mdc-typography mdc-typography--subtitle2">Exame - 25 minutes ago</h3>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                    <i class="far fa-star"></i>
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to trash">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+                </div>
+              </div>
+              <div class="demo-card__second">
+                <h1 class="demo-card__subtitle mdc-typography mdc-typography--headline6">O que faz um professor de "bots"?</h1>
+              </div>
+          <div class="demo-card__secondary mdc-typography mdc-typography--body2">Conheça este e outros empregos do futuro...</div>
+        </div>
+  
+        <div class="mdc-card__actions">
+          <div class="mdc-card__action-buttons">
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Read More</button>
+          </div>      
+        </div>
+    </div>
+  
+    <div class="mdc-card demo-card">
+        <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            <div class="demo-card__primary">
+                <h3 class="demo-card__title mdc-typography mdc-typography--subtitle2">Folha de São Paulo - 28 minutes ago</h3>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                    <i class="far fa-star"></i>
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to trash">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+                </div>
+              </div>
+              <div class="demo-card__second">
+                <h1 class="demo-card__subtitle mdc-typography mdc-typography--headline6">Microsoft</h1>
+              </div>
+          <div class="demo-card__secondary mdc-typography mdc-typography--body2">Lucro da Microsoft sobe 19% no primeiro trimestre...</div>
+        </div>
+  
+        <div class="mdc-card__actions">
+          <div class="mdc-card__action-buttons">
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Read More</button>
+          </div>      
+        </div>
+    </div>
+  
+  
+    <div class="mdc-card demo-card">
+        <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            <div class="demo-card__primary">
+                <h3 class="demo-card__title mdc-typography mdc-typography--subtitle2">Extra - 31 minutes ago</h3>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                    <i class="far fa-star"></i>
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to trash">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+                </div>
+              </div>
+              <div class="demo-card__second">
+                <h1 class="demo-card__subtitle mdc-typography mdc-typography--headline6">Ciência</h1>
+              </div>
+          <div class="demo-card__secondary mdc-typography mdc-typography--body2">Funcionária da Google quebra record mundial do PI...</div>
+        </div>
+  
+        <div class="mdc-card__actions">
+          <div class="mdc-card__action-buttons">
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Read More</button>
+          </div>      
+        </div>
+    </div>
+  
+  
+    <div class="mdc-card demo-card">
+        <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            <div class="demo-card__primary">
+                <h3 class="demo-card__title mdc-typography mdc-typography--subtitle2">BTG Pactual Digital - 33 minutes ago</h3>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                    <i class="far fa-star"></i>
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to trash">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+                </div>
+              </div>
+              <div class="demo-card__second">
+                <h1 class="demo-card__subtitle mdc-typography mdc-typography--headline6">Ações</h1>
+              </div>
+          <div class="demo-card__secondary mdc-typography mdc-typography--body2">Como investir em ações?</div>
+        </div>
+  
+        <div class="mdc-card__actions">
+          <div class="mdc-card__action-buttons">
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Read More</button>
+          </div>      
+        </div>
+    </div>
+  
+  <div class="mdc-card demo-card">
+      <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+          <div class="demo-card__primary">
+              <h3 class="demo-card__title mdc-typography mdc-typography--subtitle2">Olhar Digital - 35 minutes ago</h3>
+              <div class="mdc-card__action-icons">
+                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                  <i class="far fa-star"></i>
+                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to trash">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+                <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+              </div>
+            </div>
+            <div class="demo-card__second">
+              <h1 class="demo-card__subtitle mdc-typography mdc-typography--headline6">Mozilla</h1>
+            </div>
+        <div class="demo-card__secondary mdc-typography mdc-typography--body2">Mozilla se pronuncia sobre problemas que afetam o FireFox.</div>
+      </div>
+  
+      <div class="mdc-card__actions">
+        <div class="mdc-card__action-buttons">
+          <button class="mdc-button mdc-card__action mdc-card__action--button">Read More</button>
+        </div>      
+      </div>
+  </div>
+  
+  <div class="mdc-card demo-card">
+      <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+          <div class="demo-card__primary">
+              <h3 class="demo-card__title mdc-typography mdc-typography--subtitle2">Olhar Digital - 50 minutes ago</h3>
+              <div class="mdc-card__action-icons">
+                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                  <i class="far fa-star"></i>
+                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to trash">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+                <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+              </div>
+            </div>
+            <div class="demo-card__second">
+              <h1 class="demo-card__subtitle mdc-typography mdc-typography--headline6">Reutilização de baterias</h1>
+            </div>
+        <div class="demo-card__secondary mdc-typography mdc-typography--body2">Volkswagen vai reutilizar baterias "mortas" de carros elétricos...</div>
+      </div>
+  
+      <div class="mdc-card__actions">
+        <div class="mdc-card__action-buttons">
+          <button class="mdc-button mdc-card__action mdc-card__action--button">Read More</button>
+        </div>      
+      </div>
+  </div>
+  
+  </div>
+
+
+<script src="bundle-home.js" async></script>
+</body>
+</html>

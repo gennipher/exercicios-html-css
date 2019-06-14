@@ -1,0 +1,19 @@
+{
+  "name": "curso--js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery.js",
+  "scripts": {
+    "start": "parcel js-vini/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "parcel": "^1.12.3"
+  },
+  "devDependencies": {
+    "sass": "^1.20.3"
+  }
+}
